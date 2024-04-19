@@ -28,7 +28,7 @@ export default function PostForm({ addNewPost }: PostFormProps) {
                     <Form.Label>Post Title</Form.Label>
                     <Form.Control name='title' placeholder='Enter New Post Title' value={newPost.title} onChange={handleInputChange} />
                     <Form.Label>Post Body</Form.Label>
-                    <Form.Control name='body' placeholder='Enter New Post Body' value={newPost.body} onChange={handleInputChange} />
+                    <Form.Control as = 'textarea' name='body' placeholder='Enter New Post Body' value={newPost.body} onChange={handleInputChange} />
                     <Button className='mt-3 w-100' variant='success' type='submit'>Create Post</Button>
                 </Form>
             </Card.Body>
